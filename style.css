@@ -121,14 +121,6 @@
     padding: 20px;
     border-radius: 30px;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:70vh;
-    /* background-color: yellow; */
-    
-}
 .formcontainer{
     width:30vw;
     border:2px solid black;
@@ -157,6 +149,6 @@ form input{
     background-color: black;
     color:white;
     padding:15px;
-    width: 60%;
+    width: 62%;
     border-radius:30px;
 }

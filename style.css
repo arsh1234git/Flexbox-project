@@ -91,3 +91,33 @@
     color: white;
     font-weight: bold;
 }
+.singleproduct{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    display: flex;
+}
+.bagcontainer,.bagdetails{
+    width:40%;
+}
+.bagcontainer img{
+    width: 100%;
+}
+.bagdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bagdetails-container1 h2 ,.bagdetails-container1 p{
+    margin-bottom: 20px;
+}
+.bagdetails-container1 .price{
+    font-weight: bold;
+    font-size: 20px;
+}
+.bagdetails-container2 button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+}

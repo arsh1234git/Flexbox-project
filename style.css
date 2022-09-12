@@ -121,3 +121,17 @@
     padding: 20px;
     border-radius: 30px;
 }
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+.formcontainer{
+    width:30vw;
+    height:50vh;
+    background-color: red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}

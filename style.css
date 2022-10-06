@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&family=Ubuntu:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,25 +9,21 @@
     justify-content: space-around;
     align-items: center;
     height: 50px;
+    padding: 0 25px 0 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
-.logo{
-    width: 10%;
-}
+
 .logo-text{
     margin-left: 20px;
 }
 .nav{
     width:70%;
-    color:white;
 }
 .nav a{
     color:red;
     text-decoration: none;
     font-weight: bold;
     margin-right: 15Px;
-}
-.profileContainer{
-    width:10%;   
 }
 .profileContainer span{
     margin-right: 25px;
@@ -40,17 +37,18 @@
 }
 .trendingProducts{
     background-color: rgb(235, 235, 235);
-    height:60vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     border: 1px solid black;
     padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .products{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 20px;
 }
 .products img{
     width: 300px;
@@ -86,6 +84,7 @@
     align-items: center;
     padding: 0 20px 0 20px;
     border-radius: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .bottomContainer div a{
     text-decoration: none;
@@ -95,6 +94,7 @@
 .singleproduct{
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
     padding: 100px;
     display: flex;
 }
@@ -111,6 +111,7 @@
 }
 .bagdetails-container1 h2 ,.bagdetails-container1 p{
     margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .bagdetails-container1 .price{
     font-weight: bold;
@@ -121,29 +122,44 @@
     color: white;
     padding: 20px;
     border-radius: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .formcontainer{
     width:30vw;
-    border:2px solid black;
+    border:1px solid black;
     display: flex;
     justify-content: center;
-    background-color: red;
+    box-shadow: 2px 2px 7px 2px rgba(0,0,0,0.5);
+    font-family: 'Ubuntu', sans-serif;
+    
 }
 .form{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 form{
+    width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.form div{
+    text-align: center;
+    border-bottom: 3px solid black;
+    color: red;
 }
 form input{
-    width:60%;
+    width:80%;
     height:20px;
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 30px;;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
 }
 .form button{
     margin: 20px 0 20px 0;
@@ -152,4 +168,101 @@ form input{
     padding:15px;
     width: 62%;
     border-radius:30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ............................responsive style starts from here....................................................................................... */
+/* For form.html */
+@media (max-width:810px){
+
+    .formcontainer{
+        width:50vw;
+    }
+}
+@media (max-width:390px){
+    .formcontainer{
+        width:100vw;
+    }
+}
+/* for singleproduct.html */
+@media (max-width:930px){
+    .bagcontainer,.bagdetails{
+        width:70%;
+    }
+}
+@media (max-width:780px){
+    .singleproduct{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+    .bagcontainer{
+        display: flex;
+        justify-content: center;
+    }
+    .bagcontainer img{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .bagdetails-container2 button{
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:414px){
+    .singleproduct{
+        /* flex-direction: column;
+        align-items: center; */
+        padding: 10px;
+    }
+        
+    .bagdetails-container2 button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+}
+/* FOR index.html */
+@media (max-width:850px){
+    .nav{
+        width: auto;
+    }
+}
+@media (max-width:650px){
+    .header{
+        flex-direction: column;
+        height: 80px;
+    }
+    .profileContainer{
+        /* width: 100%; */
+        align-self:flex-end;
+    }
+    .profileContainer span{
+        margin-right: 10px;
+    }
+    .logo{
+        align-self: flex-start;
+    }
+    .logo-text{
+        margin-left: 0px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .bottomContainer div{
+        padding: 0 15px;
+        height: 30px;
+    }
+    .bottomContainer div a{
+        font-size: 13px;
+    }
+    .products img{
+        width:200px;
+    }
+
 }
